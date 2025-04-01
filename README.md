@@ -66,4 +66,7 @@ The results of the analysis will include:
 - The choice of regression techniques, even with a binary output approach, highlights the flexibility in analyzing ordinal data and deriving meaningful predictions.
 
 ## License
-This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license. The original source of this data can be found at: https://repositorium.sdum.uminho.pt/bitstream/1822/10029/1/wine5.pdf
+
+P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
+
