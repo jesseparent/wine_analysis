@@ -1,10 +1,10 @@
 # Wine Quality Dataset Analysis
 
 ## Overview
-This project aims to analyze the Wine Quality dataset to predict the quality of red wines based on various physicochemical properties, excluding the features **free sulfur dioxide** and **color**. The dataset provides an opportunity to build predictive models for wine quality using regression techniques.
+This project aims to analyze the Wine Quality dataset to predict the quality of red and white wines based on various physicochemical properties, excluding the features **free sulfur dioxide** and **color**. The dataset provides an opportunity to build predictive models for wine quality using Logistical Regression and Random Forest techniques.
 
 ## Dataset
-The dataset is sourced from the UC Irvine Machine Learning Repository and consists of physicochemical tests of wine samples and quality ratings given by experts.
+The dataset is sourced from the UC Irvine Machine Learning Repository and consists of physicochemical tests of wine samples and quality ratings given by oenologists.
 
 ### Features
 The dataset, after the removal of the **free sulfur dioxide** and **color** feature, includes the following physicochemical attributes:
@@ -25,7 +25,7 @@ The dataset, after the removal of the **free sulfur dioxide** and **color** feat
 2. **Free Sulfur Dioxide**: This feature was dropped due to the potential for multicollinearity with the **total sulfur dioxide** feature. By eliminating it, we aim to simplify the model, reduce redundancy, and enhance interpretability without significantly affecting the dataset's predictive power.
 
 ## Objective
-The primary goal of this project is to develop predictive models that accurately predict the wine quality using regression techniques. While the dataset contains ordinal quality ratings, we will be treating the quality as a binary outcome when necessary (e.g., classifying wines as "high quality" vs. "low quality") due to the absence of a continuous measurement (like speed) in the dataset.
+The primary goal of this project is to develop predictive models that accurately predict the wine quality using LR and RF techniques. While the dataset contains ordinal quality ratings, we will be treating the quality as a binary outcome when necessary (e.g., classifying wines as "high quality" vs. "low quality") due to the absence of a continuous measurement in the dataset.
 Specifically, we will use the following bins for classification:
 - **Quality 0**: Considered as "Low Quality"
 - **Quality 1**: Considered as "High Quality"
@@ -59,14 +59,14 @@ We employ various machine learning algorithms to achieve this objective, includi
 The results of the analysis will include:
 - Model accuracies and classification reports.
 - Visualizations of feature importances.
-- Insights on the physicochemical properties that most influence wine quality (see a conclusion)
+- Insights on the physicochemical properties that most influence wine quality (see a conclusion).
 
 ## Conclusions
 - Insights derived from the model performance and feature importances could guide future efforts in wine production, quality control, and improvements in wine characteristics.
-- The choice of regression techniques, even with a binary output approach, highlights the flexibility in analyzing ordinal data and deriving meaningful predictions.
+- The choice of LR and RF techniques, even with a binary output approach, highlights the flexibility in analyzing ordinal data and deriving meaningful predictions.
 
 ## License
-This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license. The original source of this data can be found at: https://repositorium.sdum.uminho.pt/bitstream/1822/10029/1/wine5.pdf
+The dataset used in this project is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license. The original source of this data can be found at: https://repositorium.sdum.uminho.pt/bitstream/1822/10029/1/wine5.pdf
 
 P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
 
